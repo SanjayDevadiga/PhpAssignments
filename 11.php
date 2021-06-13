@@ -29,6 +29,7 @@
         echo '<br> Coastliest item is :<strong>'.$maxIndex.'</strong><br>';
         $minIndex = array_search(min($final), $final); 
         echo 'Cheapest item is : <strong>'.$minIndex.'</strong><br>' ;
+        echo '<br/>Total Bill Amount'.array_sum($final);
     }
 ?>
 </body>
