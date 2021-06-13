@@ -20,7 +20,7 @@
          return $n * factorial($n-1);
         }
     }
-    print_r("Factorial of ".$_POST['no']." is :\n".factorial($_POST['no']));
+    echo "Factorial of ".$_POST['no']." is :\n".factorial($_POST['no']);
   }
 ?>
 </body>
