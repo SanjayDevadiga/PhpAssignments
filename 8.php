@@ -5,6 +5,8 @@
 <form method="POST">
 <h1>Student Application Form</h1>
 <h5>
+        Photo :
+            <input type=file name="file" required><br/>
         First name:
             <input type=text name="fname" required><br/>
         Middle name:
@@ -92,7 +94,9 @@ if(isset($_POST['submit']))
     }
     if(validate())
     {
+        $filepath = "imgs/". $_FILES["file"]["name"];
         echo "<center>";
+        echo "<img src=".$filepath." height=100 width=100 /><br/>";
         echo "<h1>Student Details</h1>";
         echo "<b>First name:-</b>".$_POST['fname']."<br/>";
         echo "<b>Middle name:-</b>".$_POST['mname']."<br/>";
